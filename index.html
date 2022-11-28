@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Header & Footer || Fantacy Designs</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sticky-footer.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+       <div class="container">
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             </button>
+             <a class="navbar-brand" href="#"> <img src="images/logo-1.png" alt="Logo Solodev"></a>
+          </div>
+          <!--
+          <div id="navbar" class="collapse navbar-collapse">
+             <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Nav header</li>
+                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">One more separated link</a></li>
+                   </ul>
+                </li>
+             </ul>
+          </div>
+         -->
+          <!--/.nav-collapse -->
+       </div>
+    </nav>
+    
+    
+    <!-- Begin page content -->
+
+
+    <div class="container">
+       <div class="page-header">
+          <h1>ValleiSchijf Jaaroverzicht 2022</h1>
+       </div>
+       <p class="lead">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?</p>
+
+       <div>
+         <p><b>Week 1</b>: Flo Rida - Wait</p>
+         <iframe src="https://open.spotify.com/embed/track/46z6ENU51UUGeRam2fWrQW?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+         <button></button>
+       </div>
+
+    </div>
+
+    <form method="post" name="contact_form"
+      action="contact-form-handler.php">
+         Your Name:
+         <input type="text" name="name">
+
+         Email Address:
+         <input type="text" name="email">
+
+         Message:
+         <textarea name="message"></textarea>
+
+         <input type="submit" value="Submit">
+      </form>
+
+      <script language="JavaScript">
+         var frmvalidator  = new Validator("contactform");
+         frmvalidator.addValidation("name","req","Please provide your name");
+         frmvalidator.addValidation("email","req","Please provide your email");
+         frmvalidator.addValidation("email","email",
+           "Please enter a valid email address");
+      </script>
+
+
+
+    <!-- Begin footer -->
+
+
+    <footer class="footer">
+       <div class="ct-footer-post">
+          <div class="container">
+             <div class="inner-left">
+                <ul>
+                   <li>
+                      <a href="">FAQ</a>
+                   </li>
+                   <li>
+                      <a href="">News</a>
+                   </li>
+                   <li>
+                      <a href="">Contact Us</a>
+                   </li>
+                </ul>
+             </div>
+             <div class="inner-right">
+                <p>
+                   Copyright&#169; 2021 FantacyDesign.&nbsp;<a href="">Privacy Policy</a>
+                </p>
+                <p>
+                   <a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by <b>JD KHAN</b> </a>
+                </p>
+             </div>
+          </div>
+       </div>
+    </footer>
+
+  </body>
+</html>

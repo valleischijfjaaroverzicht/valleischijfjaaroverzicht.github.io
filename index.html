@@ -40,7 +40,7 @@
    </script>
 
     <div class="container">
-      <center><img src="images/valleiradio.png" width="150"></center>
+      <center><a href="http://www.valleischijfjaaroverzicht.nl"><img src="images/valleiradio.png" width="150"></a></center>
        <div class="page-header">
           <h1>ValleiSchijf Jaaroverzicht 2022</h1>
        </div>
@@ -51,19 +51,25 @@
       <div class="container">
          <form name="contact-form" method="post" action="https://forms.un-static.com/forms/c8b0cf1654744cc9a4e8d205ea96a68badd136c8">
             <div class="form-group row">
-               <label for="inputName" class="col-sm-2 col-form-label">Naam</label>
+               <label for="inputName" class="col-sm-2 col-form-label">Naam <label style="color:red">*</label></label>
                <div class="col-sm-10">
                  <input type="text" name="name" class="form-control" placeholder="Naam" required>
                </div>
              </div>
              <div class="form-group row">
-               <label for="inputName" class="col-sm-2 col-form-label">E-mailadres</label>
+               <label for="inputName" class="col-sm-2 col-form-label">E-mailadres <label style="color:red">*</label></label>
                <div class="col-sm-10">
                   <input type="email" name="email" class="form-control" placeholder="E-mailadres" required>
                </div>
              </div>
              <div class="form-group row">
-               <label for="inputMessage" class="col-sm-2 col-form-label">Kies maximaal 10 favorieten uit</label>
+               <label for="inputNumber" class="col-sm-2 col-form-label">Telefoonnummer</label>
+               <div class="col-sm-10">
+                 <input type="text" name="number" class="form-control" placeholder="Telefoonnummer">
+               </div>
+             </div>
+             <div class="form-group row">
+               <label for="inputMessage" class="col-sm-2 col-form-label">Kies maximaal 10 favorieten uit <label style="color:red">*</label></label>
                <div class="col-sm-10">
                   <textarea name="inputMessage" cols="40" rows="22" class="form-control" placeholder="Klik op 'Toevoegen aan lijst' onder een nummer, om nummers toe te voegen" required></textarea>
                </div>

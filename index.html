@@ -437,12 +437,18 @@
 
     <div class='pre-loader'>
       <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-  </div>
+      
+    </div>
+
+    <div class="pre-loader-text">
+      <center><p class="lead"><br><br><br><br><br><br><br><br><br><br><br><br><b>Laden...</b><br><br>Dit kan even duren.<br>Alle schijven van het afgelopen jaar<br>moeten afgestoft worden.</p></center>
+    </div>
   
   <!-- js to hide preloader loading is done -->
   <script type='text/javascript'>
       window.addEventListener('load', function () {
           document.querySelector('.pre-loader').className += ' hidden';
+          document.querySelector('.pre-loader-text').className += ' hidden';
       });
   </script>
 

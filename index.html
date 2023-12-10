@@ -1,485 +1,703 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ValleiSchijf Jaaroverzicht 2022</title>
-    <link rel="icon" type="image/png" href="/images/favicon-16.png">
-  </head>
-  <body>
-   <span class="loader"></span>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ValleiSchijf Jaaroverzicht 2023</title>
+  <link rel="icon" type="image/png" href="/images/favicon-16.png">
+</head>
 
-    </script>
-    <!-- Begin page content -->
+<body>
+  <span class="loader"></span>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </script>
+  <!-- Begin page content -->
 
 
 
-    <button id="upButton" onclick="topFunction()" class="upButton">^ Terug naar boven ^</button>
+  <button id="upButton" onclick="topFunction()" class="upButton">^ Terug naar boven ^</button>
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("upButton");
+
+    // When the user scrolls down 1500px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      var top = document.getElementById("top").scrollIntoView({ behavior: 'smooth' }, true);
+    }
+  </script>
+
+  <div class="container">
+    <center><a href="http://valleischijfjaaroverzicht.github.io/"><img src="images/valleiradio.png" width="150"></a>
+    </center>
+    <div class="page-header">
+      <h1>ValleiSchijf Jaaroverzicht 2023</h1>
+    </div>
+    <p class="lead">Op zaterdag 30 december zendt <a href="https://www.valleiradio.nl" target="_blank"
+        rel="noopener">ValleiRadio.nl</a> tussen 13:00 en 17:00 het "ValleiSchijf Jaaroverzicht" uit. Alle 52 schijven
+      van het afgelopen jaar komen voorbij, maar jij kunt de volgorde bepalen!<br><br>Stem nu op jouw favoriete
+      ValleiSchijven van het afgelopen jaar. Beluister de schijven hieronder nog eens terug en vul het contactformulier
+      in. Je kunt maximaal tien favorieten uitzoeken. Voer bij het maken van je keuzes het weeknummer van de
+      ValleiSchijf in, of klik simpelweg op de knop "Toevoegen aan lijst" onder jouw favoriete nummers!<br><br>Bij een
+      nummer kun je een motivatie schrijven, zodat we deze in de uitzending mee kunnen nemen. Mocht je het leuk vinden
+      om in de uitzending over een keuze te vertellen, voer dan naast een motivatie ook je telefoonnummer in (niet
+      verplicht).</p>
+
+  </div>
+
+  <div id="top"></div>
+
+  <div class="container">
+    <form name="contact-form" method="post"
+      action="https://forms.un-static.com/forms/750f9bc0a217575603e9e5c0807c5de85160967a">
+      <div class="form-group row">
+        <label for="inputName" class="col-sm-2 col-form-label">Naam <label style="color:red">*</label></label>
+        <div class="col-sm-10">
+          <input type="text" name="name" class="form-control" placeholder="Naam" required>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputName" class="col-sm-2 col-form-label">E-mailadres <label style="color:red">*</label></label>
+        <div class="col-sm-10">
+          <input type="email" name="email" class="form-control" placeholder="E-mailadres" required>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputNumber" class="col-sm-2 col-form-label">Telefoonnummer</label>
+        <div class="col-sm-10">
+          <input type="text" name="number" class="form-control" placeholder="Telefoonnummer">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputMessage" class="col-sm-2 col-form-label">Kies maximaal 10 favorieten uit <label
+            style="color:red">*</label></label>
+        <div class="col-sm-10">
+          <textarea name="inputMessage" cols="40" rows="22" class="form-control"
+            placeholder="Klik op 'Toevoegen aan lijst' onder een nummer, om nummers toe te voegen" required></textarea>
+        </div>
+      </div>
+      <button class="voteButton" type="submit" style="float: right;">Lijst versturen</button>
+      <!-- <button class="reloadButton" type="reset" onClick="window.location.reload();" style="float: right;">Opnieuw beginnen</button> -->
+    </form>
+  </div>
+
+
+  <div class="container">
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 1</b>: Adam Lambert - Holding Out for a Hero</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6DeQCnECBHZl494Q5dydZz?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 1: Adam Lambert - Holding Out for a Hero' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 2</b>: Davina Michelle - Heartbeat</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/1otciLAg6R0yEEJblsHtKM?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 2: Davina Michelle - Heartbeat' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 3</b>: Hemlock Ernst, Kenny Segal - Down</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/0XnhTgMuX3ncdnf5mZnce8?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 3: Hemlock Ernst, Kenny Segal - Down' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 4</b>: Paramore - C’est Comme Ça</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/1Nx7KvCw6D3O0W2HwYg9tq?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 4: Paramore - C’est Comme Ça' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 5</b>: Sam Feldt - Enough To Drink</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3BGfe8GXBE4cCVEvBG10yP?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 5: Sam Feldt - Enough To Drink' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 6</b>: Jonas Blue - Weekends</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3JlHRjPt2TNB9h7VFf0im2?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 6: Jonas Blue - Weekends' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 7</b>: Sofi Tukker - Summer In New York</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/5kyJ6sznnWACqHbw65p34Q?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 7: Sofi Tukker - Summer In New York' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 8</b>: Zara Larsson - Can’t Tame Her</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/4vOoQh9MhS9pyrbvc8LyMz?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 8: Zara Larsson - Can’t Tame Her' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 9</b>: Knox - NYC</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/5F6gniXisSbOKtfgIJIKoD?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 9: Knox - NYC' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 10</b>: EUT - San Francisco</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/7LhVidZ0DEtLKb3T5EjmxN?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 10: EUT - San Francisco' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 11</b>: The Vices - For My Mind</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/1L2OzkZ0v7POv5V6etlLwN?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 11: The Vices - For My Mind' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 12</b>: P!nk - Runaway</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/72RjHoPZPW3LZHgVS4akIy?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 12: P!nk - Runaway' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 13</b>: Ed Sheeran - Eyes Closed</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3p7XQpdt8Dr6oMXSvRZ9bg?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 13: Ed Sheeran - Eyes Closed' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 14</b>: De Staat - Running Backwards Into The Future</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/65yIMGmvwXsBsNFEOKkgSm?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 14: De Staat - Running Backwards Into The Future' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 15</b>: Afrojack - Alone</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/7vSx1uzjLF2elseUEFDDgu?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 15: Afrojack - Alone' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 16</b>: Floor Jansen - My Paragon</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/7xzH0ccG45rezGEl7MmPai?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 16: Floor Jansen - My Paragon' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 17</b>: Son Mieux - Tell Me More</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/1jBN9OHMe8Fi39mazoXHvS?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 17: Son Mieux - Tell Me More' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
     
-    <script>
-      // Get the button
-      let mybutton = document.getElementById("upButton");
-      
-      // When the user scrolls down 1500px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-         var top = document.getElementById("top").scrollIntoView({behavior: 'smooth'}, true);
-      }
-   </script>
-
-    <div class="container">
-      <center><a href="http://www.valleischijfjaaroverzicht.nl"><img src="images/valleiradio.png" width="150"></a></center>
-       <div class="page-header">
-          <h1>ValleiSchijf Jaaroverzicht 2022</h1>
-       </div>
-       <p class="lead">Op oudejaarsdag zendt <a href="https://www.valleiradio.nl" target="_blank" rel="noopener">ValleiRadio.nl</a> tussen 13:00 en 17:00 het "ValleiSchijf Jaaroverzicht" uit. Alle 52 schijven van het afgelopen jaar komen voorbij, maar jij kunt de volgorde bepalen!<br><br>Stem nu op jouw favoriete ValleiSchijven van het afgelopen jaar. Beluister de schijven hieronder nog eens terug en vul het contactformulier in. Je kunt maximaal tien favorieten uitzoeken. Voer bij het maken van je keuzes het weeknummer van de ValleiSchijf in, of klik simpelweg op de knop "Toevoegen aan lijst" onder jouw favoriete nummers!<br><br>Bij een nummer kun je een motivatie schrijven, zodat we deze in de uitzending mee kunnen nemen. Mocht je het leuk vinden om in de uitzending over een keuze te vertellen, voer dan naast een motivatie ook je telefoonnummer in (niet verplicht).</p>
-
-      </div>
-
-      <div id="top"></div>
-
-      <div class="container">
-         <form name="contact-form" method="post" action="https://forms.un-static.com/forms/cef15ca5ec748da16ceecb6afa9ccc880675a1e7">
-            <div class="form-group row">
-               <label for="inputName" class="col-sm-2 col-form-label">Naam <label style="color:red">*</label></label>
-               <div class="col-sm-10">
-                 <input type="text" name="name" class="form-control" placeholder="Naam" required>
-               </div>
-             </div>
-             <div class="form-group row">
-               <label for="inputName" class="col-sm-2 col-form-label">E-mailadres <label style="color:red">*</label></label>
-               <div class="col-sm-10">
-                  <input type="email" name="email" class="form-control" placeholder="E-mailadres" required>
-               </div>
-             </div>
-             <div class="form-group row">
-               <label for="inputNumber" class="col-sm-2 col-form-label">Telefoonnummer</label>
-               <div class="col-sm-10">
-                 <input type="text" name="number" class="form-control" placeholder="Telefoonnummer">
-               </div>
-             </div>
-             <div class="form-group row">
-               <label for="inputMessage" class="col-sm-2 col-form-label">Kies maximaal 10 favorieten uit <label style="color:red">*</label></label>
-               <div class="col-sm-10">
-                  <textarea name="inputMessage" cols="40" rows="22" class="form-control" placeholder="Klik op 'Toevoegen aan lijst' onder een nummer, om nummers toe te voegen" required></textarea>
-               </div>
-             </div>
-            <button class="voteButton" type="submit" style="float: right;">Lijst versturen</button>
-            <!-- <button class="reloadButton" type="reset" onClick="window.location.reload();" style="float: right;">Opnieuw beginnen</button> -->
-          </form>
-      </div>
-
-
-        <div class="container">
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 1</b>: Flo Rida - Wait</p>
-            <iframe src="https://open.spotify.com/embed/track/46z6ENU51UUGeRam2fWrQW" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 1: Flo Rida - Wait' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 2</b>: Jonas Blue - Don't Wake Me Up</p>
-            <iframe src="https://open.spotify.com/embed/track/3LEgGAl9zLcQWGTp7ptqtQ" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 2: Jonas Blue - Don‘t Wake Me Up' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 3</b>: Matteo Bocelli - Close</p>
-            <iframe src="https://open.spotify.com/embed/track/4BkfHpktD9uGNEU6Mu0gd0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 3: Matteo Bocelli - Close' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 4</b>: GAYLE - ur just horny</p>
-            <iframe src="https://open.spotify.com/embed/track/02gGfhPHk5NuN0mgbKpU4Y" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 4: GAYLE - ur just horny' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 5</b>: Griff, Sigrid - Head On Fire</p>
-            <iframe src="https://open.spotify.com/embed/track/6QLNcOI6YCqdLAS6GLWXMj" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 5: Griff, Sigrid - Head On Fire' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 6</b>: Bastille - Back To The Future</p>
-            <iframe src="https://open.spotify.com/embed/track/2i6j4kdRKZV4Y62I2bD1QC" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 6: Bastille - Back To The Future' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 7</b>: George Ezra - Anyone For You (Tiger Lilly)</p>
-            <iframe src="https://open.spotify.com/embed/track/5iFQfP3AqVnHHS89LKQisL" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 7: George Ezra - Anyone For You (Tiger Lilly)' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 8</b>: Connor Price - City Lights</p>
-            <iframe src="https://open.spotify.com/embed/track/6yYPP5wXvJ4ngeskwa3bld" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 8: Connor Price - City Lights' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 9</b>: Colinski - Hush (Lullaby)</p>
-            <iframe src="https://open.spotify.com/embed/track/6J3EKm7zGP7ptuJiKTVGUI" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 9: Colinski - Hush (Lullaby)' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 10</b>: Kalush Orchestra - Stefania</p>
-            <iframe src="https://open.spotify.com/embed/track/2vHzOWRKYPLu8umRPIFuOq" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 10: Kalush Orchestra - Stefania' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 11</b>: Rammstein - Zeit</p>
-            <iframe src="https://open.spotify.com/embed/track/6eOGjyegLDZqCvCZ3divgp" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 11: Rammstein - Zeit' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 12</b>: Florence + The Machine - My Love</p>
-            <iframe src="https://open.spotify.com/embed/track/0vQYe6g8bNbdUKnUnXdQQV" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 12: Florence + The Machine - My Love' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 13</b>: Froukje, S10 - Zonder Gezicht</p>
-            <iframe src="https://open.spotify.com/embed/track/0KAqcZyd6eiKjyneZRmePT" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 13: Froukje, S10 - Zonder Gezicht' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 14</b>: Tom Grennan - Remind Me</p>
-            <iframe src="https://open.spotify.com/embed/track/6VIYEyjNW71NnIGEduf8D8" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 14: Tom Grennan - Remind Me' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 15</b>: Passenger - Blink of an Eye</p>
-            <iframe src="https://open.spotify.com/embed/track/2uyfgIj0vJT3HiLogBQZi6" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 15: Passenger - Blink of an Eye' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 16</b>: KUZKO - Penelope</p>
-            <iframe src="https://open.spotify.com/embed/track/25tUWK6vYfshWJ5HXbH93D" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 16: KUZKO - Penelope' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 17</b>: George Ezra - Green Green Grass</p>
-            <iframe src="https://open.spotify.com/embed/track/3rk4aJ0vAj3cFUIQEeASkT" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 17: George Ezra - Green Green Grass' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 18</b>: Vreemde Kostgangers - Zoete Woede</p>
-            <iframe src="https://open.spotify.com/embed/track/4irJ1QFBRV1I5oFcuha6vR" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 18: Vreemde Kostgangers - Zoete Woede' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 19</b>: Dermot Kennedy - Something to Someone</p>
-            <iframe src="https://open.spotify.com/embed/track/56U84FLjFgsEY6NZvuxa3U" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 19: Dermot Kennedy - Something to Someone' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 20</b>: ASPACETOLIVE - Don't Care</p>
-            <iframe src="https://open.spotify.com/embed/track/7jwWe9QPSZ7YCZAAax3dWu" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 20: ASPACETOLIVE - Don’t Care' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 21</b>: remme - chameleons</p>
-            <iframe src="https://open.spotify.com/embed/track/344QBfyJrOAKfDgZ8JkRvs" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 21: remme - chameleons' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 22</b>: SERA - She Kissed Me First</p>
-            <iframe src="https://open.spotify.com/embed/track/0jaqDuzxve5Bqlb8i6mNh2" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 22: SERA - She Kissed Me First' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 23</b>: Europa (Jax Jones & Martin Solveig) - Lonely Heart (feat. GRACEY)</p>
-            <iframe src="https://open.spotify.com/embed/track/4iGjLLvo4Pax82YX3jE3Q1" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 23: Europa (Jax Jones & Martin Solveig) - Lonely Heart (feat. GRACEY)' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 24</b>: Bastille - Remind Me</p>
-            <iframe src="https://open.spotify.com/embed/track/5DlwOwWvIA9MOGixQnkwXD" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 24: Bastille - Remind Me' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 25</b>: John Legend - Honey (with Muni Long)</p>
-            <iframe src="https://open.spotify.com/embed/track/1ei5bZDXeMNU4rw3iEQ2zX" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 25: John Legend - Honey (with Muni Long)' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 26</b>: Robbie Williams - Angels (XXV)</p>
-            <iframe src="https://open.spotify.com/embed/track/7rRmmf5j50l3Gm5syJSJIt" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 26: Robbie Williams - Angels (XXV)' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 27</b>: Kygo - Never Really Loved Me (feat. Dean Lewis)</p>
-            <iframe src="https://open.spotify.com/embed/track/1O73ZKgl0THUImkHW6dfAL" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 27: Kygo - Never Really Loved Me (feat. Dean Lewis)' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 28</b>: Lena - Looking For Love</p>
-            <iframe src="https://open.spotify.com/embed/track/3iUmoy21qlRY1VdNEtJJlx" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 28: Lena - Looking For Love' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 29</b>: HAEVN - Kite in a Hurricane</p>
-            <iframe src="https://open.spotify.com/embed/track/1XNijZmhaQZoMm7bV19fzd" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 29: HAEVN - Kite in a Hurricane' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 30</b>: Igor Iov - Been Waitin' for It</p>
-            <iframe src="https://open.spotify.com/embed/track/4cy12jnjTltqUP56Wcd4bs" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 30: Igor Iov - Been Waitin’ for It' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 31</b>: Two Door Cinema Club - Lucky (edit)</p>
-            <iframe src="https://open.spotify.com/embed/track/20K1GR4VcRUVoLLBNHxNcE" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 31: Two Door Cinema Club - Lucky (edit)' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 32</b>: Lizzo - 2 Be Loved (Am I Ready)</p>
-            <iframe src="https://open.spotify.com/embed/track/2rmwqU7yzTvzkiaRV53DpT" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 32: Lizzo - 2 Be Loved (Am I Ready)' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 33</b>: Maggie Rogers - Overdrive</p>
-            <iframe src="https://open.spotify.com/embed/track/5WjKzP0MY4COScm6VPrLqU" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 33: Maggie Rogers - Overdrive' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 34</b>: First Aid Kit - Out Of My Head</p>
-            <iframe src="https://open.spotify.com/embed/track/6hAZx4PQIlwyazfANp6joe" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 34: First Aid Kit - Out Of My Head' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 35</b>: Wulf - Think About You</p>
-            <iframe src="https://open.spotify.com/embed/track/043e6hEu1Fn7vDsxMimTIl" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 35: Wulf - Think About You' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 36</b>: Sigala, David Guetta, Sam Ryder - Living Without You</p>
-            <iframe src="https://open.spotify.com/embed/track/1KkV5NgLa2XtD00IfaCPyG" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 36: Sigala, David Guetta, Sam Ryder - Living Without You' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 37</b>: Mart Hoogkamer - Diamant</p>
-            <iframe src="https://open.spotify.com/embed/track/4iOKLNX46VhQ6xvj6zhbZU" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 37: Mart Hoogkamer - Diamant' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 38</b>: Cheat Code - I Remember</p>
-            <iframe src="https://open.spotify.com/embed/track/5e2ZOmiFEAOFEgXNj1mHEk" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 38: Cheat Code - I Remember' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 39</b>: Lil Nas X - STAR WALKIN'</p>
-            <iframe src="https://open.spotify.com/embed/track/38T0tPVZHcPZyhtOcCP7pF" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 39: Lil Nas X - STAR WALKIN’' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 40</b>: Charlie Puth - Charlie Be Quiet!</p>
-            <iframe src="https://open.spotify.com/embed/track/3E9es0SK2EusrHA7IaO7Zu" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 40: Charlie Puth - Charlie Be Quiet!' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 41</b>: Antoon - Klop Klop</p>
-            <iframe src="https://open.spotify.com/embed/track/6a3UR5Lp9h2u9x4JMuV0T6" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 41: Antoon - Klop Klop' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 42</b>: Red Hot Chili Peppers - Tippa My Tongue</p>
-            <iframe src="https://open.spotify.com/embed/track/3s53zBEi1ZU6dJj19eFOxW" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 42: Red Hot Chili Peppers - Tippa My Tongue' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 43</b>: Joel Corry - Lionheart (Fearless)</p>
-            <iframe src="https://open.spotify.com/embed/track/5vlzH0ps6WDyb158oFTAb3" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 43: Joel Corry - Lionheart (Fearless)' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 44</b>: Knox - Dumpster Fire</p>
-            <iframe src="https://open.spotify.com/embed/track/3x0TCFsVKE5utRnqYiG0c2" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 44: Knox - Dumpster Fire' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 45</b>: Ofenbach - I Ain’t Got No Worries</p>
-            <iframe src="https://open.spotify.com/embed/track/0REXvxnclpTKt2sjgZmESY" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 45: Ofenbach - I Ain’t Got No Worries' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 46</b>: Two Door Cinema Club - Wonderful Life</p>
-            <iframe src="https://open.spotify.com/embed/track/3l8P7djciFNu68H8fQGQAj" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 46: Two Door Cinema Club - Wonderful Life' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 47</b>: Son Mieux - This Is The Moment</p>
-            <iframe src="https://open.spotify.com/embed/track/6XKqVWF9BPvY2mscmS7R5u" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 47: Son Mieux - This Is The Moment' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 48</b>: Inhaler - Love Will Get You There</p>
-            <iframe src="https://open.spotify.com/embed/track/0UgCI5TiOQthbrEVSqHC9j" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 48: Inhaler - Love Will Get You There' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 49</b>: Olly Murs - Dancing On Cars</p>
-            <iframe src="https://open.spotify.com/embed/track/2jOQGSEqdQrqb7OuzWFmmv" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 49: Olly Murs - Dancing On Cars' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-          
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 50</b>: Lost Frequencies, Elley Duhé, X Ambassadors - Back To You</p>
-            <iframe src="https://open.spotify.com/embed/track/3K00Ib1shkOEiAXU5pec6e" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 50: Lost Frequencies, Elley Duhe, X Ambassadors - Back To You' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-          
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 51</b>: Alan Walker - The Drum</p>
-            <iframe src="https://open.spotify.com/embed/track/1zOOl8f7qkjj0AmvlCfLyQ" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 51: Alan Walker - The Drum' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-         
-         <div>
-            <p>&nbsp;</p>
-            <p><b>Week 52</b>: Sam Ryder - Put A Light On Me</p>
-            <iframe src="https://open.spotify.com/embed/track/6fU9mgFOtOROKbwI3DmlLm" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 52: Sam Ryder - Put A Light On Me' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-         
-         <div>
-            <p>&nbsp;</p>
-            <p><b>BonusSchijf</b>: Queen - Bohemian Rhapsody</p>
-            <iframe src="https://open.spotify.com/embed/track/4u7EnebtmKWzUH433cf5Qv" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'" onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'BonusSchijf: Queen - Bohemian Rhapsody' + '\nMotivatie: \n\n'">Toevoegen aan lijst</button>
-         </div>
-         
-      </div>
-
-    <div class="container">
-
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 18</b>: R3HAB - Rock My Body</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/6pb5DtlAeG95dNQLHiArRU?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 18: R3HAB - Rock My Body' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
     </div>
 
-    <div class='pre-loader'>
-      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-      
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 19</b>: Nicky Romero - Chapters</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/1gpFuNlgfcpvXtD2TQILsQ?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 19: Nicky Romero - Chapters' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
     </div>
 
-    <div class="pre-loader-text">
-      <center><p class="lead"><br><br><br><br><br><br><br><br><br><br><br><br><b>Laden...</b><br><br>Dit kan even duren.<br>Alle schijven van het afgelopen jaar<br>moeten afgestoft worden.</p></center>
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 20</b>: Knox - Love Letter</p>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/3wIMmFNL5hdqUBpAO0Ogpu?utm_source=generator" width="100%" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 20: Knox - Love Letter' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
     </div>
-  
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 21</b>: Ava Max - Ghost (Merk & Kremont Remix)</p>
+      <iframe src="https://open.spotify.com/embed/track/1SDE6NorcBVtssHzaWeRC4?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 21: Ava Max - Ghost (Merk & Kremont Remix)' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 22</b>: Joe Bonamassa - I Want To Shout About It</p>
+      <iframe src="https://open.spotify.com/embed/track/6MJzbRnxAbQ2Uke7e5vM2H?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 22: Joe Bonamassa - I Want To Shout About It' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 23</b>: Foo Fighters - The Glass</p>
+      <iframe src="https://open.spotify.com/embed/track/26iWAXoJRiUv9yYzxYBqSv?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 23: Foo Fighters - The Glass' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 24</b>: David Guetta - Baby Don’t Hurt Me</p>
+      <iframe src="https://open.spotify.com/embed/track/3BKD1PwArikchz2Zrlp1qi?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 24: David Guetta - Baby Don’t Hurt Me' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 25</b>: Miss Montreal - Alles Vergeven</p>
+      <iframe src="https://open.spotify.com/embed/track/0mlq1DTHPuugqFxb5ZRyju?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 25: Miss Montreal - Alles Vergeven' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 26</b>: Jason Mraz - Feel Good Too</p>
+      <iframe src="https://open.spotify.com/embed/track/5QeYUoI9ApfeOVaKhfR4Xg?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 26: Jason Mraz - Feel Good Too' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 27</b>: Nothing But Thieves - Overcome</p>
+      <iframe src="https://open.spotify.com/embed/track/18q5OmlDTbSm8w9J1i17dT?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 27: Nothing But Thieves - Overcome' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 28</b>: Walk Off the Earth - Long Way Home</p>
+      <iframe src="https://open.spotify.com/embed/track/1cfIq5AIU43TVwwEONe2n8?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 28: Walk Off the Earth - Long Way Home' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 29</b>: Di-Rect - OMG It’s Happening</p>
+      <iframe src="https://open.spotify.com/embed/track/3UDWgZznpvkwYx92b0hjJ8?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 29: Di-Rect - OMG It’s Happening' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 30</b>: Lucas & Steve - Best Of Me</p>
+      <iframe src="https://open.spotify.com/embed/track/2h9d7KuU0NppMPFiEEXbBx?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 30: Lucas & Steve - Best Of Me' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 31</b>: SERA - Best Friend</p>
+      <iframe src="https://open.spotify.com/embed/track/6SEnSnZvVF9jW5OGQpSgBc?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 31: SERA - Best Friend' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 32</b>: Ava Max & Alok - Car Keys (Ayla)</p>
+      <iframe src="https://open.spotify.com/embed/track/00E0Z2jrF7reoHps4zcbWQ?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 32: Ava Max & Alok - Car Keys (Ayla)' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 33</b>: Giant Rooks - Somebody Like You</p>
+      <iframe src="https://open.spotify.com/embed/track/7jLAYW3N25Piy6lEI4WczE?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 33: Giant Rooks - Somebody Like You' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 34</b>: Swedish House Mafia - Ray Of Solar</p>
+      <iframe src="https://open.spotify.com/embed/track/5Y2n6pW4Vqr4Mzkd9V4Uk8?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 34: Swedish House Mafia - Ray Of Solar' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 35</b>: Danny Vera - Beggin’ for Trouble</p>
+      <iframe src="https://open.spotify.com/embed/track/4FdEKISOLTxxbAkN1XoYiH?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 35: Danny Vera - Beggin’ for Trouble' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 36</b>: Bryan Adams - Sometimes You Lose Before You Win</p>
+      <iframe src="https://open.spotify.com/embed/track/2c4goRObjUsHBWfXS9xBRB?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 36: Bryan Adams - Sometimes You Lose Before You Win' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 37</b>: The Rolling Stones - Angry</p>
+      <iframe src="https://open.spotify.com/embed/track/0daHbdrLvUmkh81rnolMcG?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 37: The Rolling Stones - Angry' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 38</b>: Zara Larsson, David Guetta - On My Love</p>
+      <iframe src="https://open.spotify.com/embed/track/0dxp7DyPJEo6JhtnjUtBnN?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 38: Zara Larsson, David Guetta - On My Love' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 39</b>: Timmy Trumpet - Fuego</p>
+      <iframe src="https://open.spotify.com/embed/track/42jqtDBoV2YGTRbFI02p6H?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 39: Timmy Trumpet - Fuego' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 40</b>: KANE - What Are You Waiting For?</p>
+      <iframe src="https://open.spotify.com/embed/track/3hnFEjPOnP7d3eTxPGpNkX?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 40: KANE - What Are You Waiting For?' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 41</b>: Kris Kross Amsterdam x SERA x Conor Maynard - Stay (Never Leave)</p>
+      <iframe src="https://open.spotify.com/embed/track/4nmYpdBk6SMg45w1OQGMQP?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 41: Kris Kross Amsterdam x SERA x Conor Maynard - Stay (Never Leave)' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 42</b>: Alok, The Chainsmokers & Mae Stephens - Jungle</p>
+      <iframe src="https://open.spotify.com/embed/track/0OvO2X2Q3i98dc5RcgEN3x?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 42: Alok, The Chainsmokers & Mae Stephens - Jungle' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 43</b>: The Rolling Stones - Mess It Up</p>
+      <iframe src="https://open.spotify.com/embed/track/7wkTF8cHGCurrfNATqvJLc?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 43: The Rolling Stones - Mess It Up' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 44</b>: Green Day - The American Dream Is Killing Me</p>
+      <iframe src="https://open.spotify.com/embed/track/48SmjoT74xf4Zi07EHRt1s?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 44: Green Day - The American Dream Is Killing Me' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 45</b>: Anouk - Are You Done Running</p>
+      <iframe src="https://open.spotify.com/embed/track/0EFoiBHj3kP9WoVhojklW6?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 45: Anouk - Are You Done Running' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 46</b>: Mogli - Lauryn</p>
+      <iframe src="https://open.spotify.com/embed/track/2LVSYmGnTpatIKa4DtldVo?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 46: Mogli - Lauryn' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 47</b>: The Beatles - Now And Then</p>
+      <iframe src="https://open.spotify.com/embed/track/4vziJcnB2Qyi9o4nIRUeN7?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 47: The Beatles - Now And Then' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 48</b>: Dolly Parton - Rockstar</p>
+      <iframe src="https://open.spotify.com/embed/track/6SDLnwEFTJzKXyU12M7EgJ?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 48: Dolly Parton - Rockstar' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 49</b>: Snelle - Rock ‘n Roll in Nederland</p>
+      <iframe src="https://open.spotify.com/embed/track/7o51u26XzNsTpA23561NJv?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 49: Snelle - Rock ‘n Roll in Nederland' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 50</b>: KANE - War Ends Today</p>
+      <iframe src="https://open.spotify.com/embed/track/4TDdbNg50GKvJXKka4uddq?utm_source=generator" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'Week 50: KANE - War Ends Today' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 51</b></p>
+      <i>Deze schijf is nog niet bekend...</i>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>Week 52</b></p>
+      <i>Deze schijf is nog niet bekend...</i>
+    </div>
+
+    <div>
+      <p>&nbsp;</p>
+      <p><b>BonusSchijf</b>: Queen - Bohemian Rhapsody</p>
+      <iframe src="https://open.spotify.com/embed/track/4u7EnebtmKWzUH433cf5Qv" width="100%" height="80" frameBorder="0"
+        allowtransparency="true" allow="encrypted-media"></iframe>
+      <button class="voteButton" type="button" onmouseup="this.style.background='#35FF9A'"
+        onclick="document.forms['contact-form'].inputMessage.value = document.forms['contact-form'].inputMessage.value + 'BonusSchijf: Queen - Bohemian Rhapsody' + '\nMotivatie: \n\n'">Toevoegen
+        aan lijst</button>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+  </div>
+
+  <div class='pre-loader'>
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+  </div>
+
+  <div class="pre-loader-text">
+    <center>
+      <p class="lead"><br><br><br><br><br><br><br><br><br><br><br><br><b>Laden...</b><br><br>
+      <text id='showMe1'>Dit kan even duren.</text><text id='showMe2'><br>Alle schijven van het afgelopen jaar<br>moeten afgestoft worden.</text></p>
+    </center>
+  </div>
+
   <!-- js to hide preloader loading is done -->
   <script type='text/javascript'>
-      window.addEventListener('load', function () {
-          document.querySelector('.pre-loader').className += ' hidden';
-          document.querySelector('.pre-loader-text').className += ' hidden';
-      });
+    window.addEventListener('load', function () {
+      document.querySelector('.pre-loader').className += ' hidden';
+      document.querySelector('.pre-loader-text').className += ' hidden';
+    });
   </script>
 
 
-  </body>
+</body>
+
 </html>
